@@ -25,6 +25,10 @@ brew install spaceship
 curl -fsSL https://get.pnpm.io/install.sh | sh -
 # https://github.com/tmux/tmux/wiki/Installing
 brew install tmux
+# https://github.com/sharkdp/fd?tab=readme-ov-file#installation
+brew install fd
+# https://github.com/junegunn/fzf
+brew install fzf
 
 # g++
 brew install gcc

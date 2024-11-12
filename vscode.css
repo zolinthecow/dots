@@ -237,7 +237,7 @@
         max-width: none !important;
 
         a {
-            justify-content: center !important;
+            padding-left: 16px !important;
         }
     }
     .right-items.items-container {

@@ -12,7 +12,7 @@ alias pip=pip3
 
 source "/opt/homebrew/opt/spaceship/spaceship.zsh"
 
-export PATH=/Users/colinzhao/bin:$PATH
+export PATH=/Users/colinzhao/bin:/Users/colinzhao/.local/bin:$PATH
 
 export LSCOLORS="ExfxcxdxBxegecabagacaf"
 alias ls='ls -GH'
@@ -66,4 +66,7 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
