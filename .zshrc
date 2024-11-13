@@ -21,6 +21,26 @@ export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$ANDROID_HOME/emulator:$PATH
 export PATH=$ANDROID_HOME/platform-tools:$PATH
 
+ssh_tun() {
+    if [ $# -ne 2 ]; then
+        echo "Usage: ssh_tun <remote_host> <port>"
+        return 1
+    fi
+    
+    ssh -f -N -L "${2}:localhost:${2}" "$1"
+    echo "Started SSH tunnel on port $2 to $1"
+}
+
+ssh_tun_kill() {
+    if [ $# -ne 1 ]; then
+        echo "Usage: ssh_tun_kill <port>"
+        return 1
+    fi
+    
+    pkill -f "ssh -f -N -L ${1}:localhost:${1}"
+    echo "Killed SSH tunnel on port $1"
+}
+
 # I wonder why i did this
 # export NODE_OPTIONS=--openssl-legacy-provider
 
