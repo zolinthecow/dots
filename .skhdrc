@@ -108,19 +108,19 @@
 # open terminal, blazingly fast compared to iTerm/Hyper
 cmd - return : open -a /Applications/iTerm.app/
 
-# open vscode
-cmd + shift - return : open -a "Zed"
+# open cursor
+cmd + shift - return : open -a "Cursor"
 
 # open chrome
 cmd + alt - return : open -a "Arc"
 
 # BSP: moves focus between windows in the current focused display
-alt - h : yabai -m window --focus west
-alt - j : yabai -m window --focus south
-alt - k : yabai -m window --focus north
-alt - l : yabai -m window --focus east
-alt - z : yabai -m window --toggle zoom-fullscreen
-shift + alt - z : yabai -m window --toggle zoom-parent
+# alt - h : yabai -m window --focus west
+# alt - j : yabai -m window --focus south
+# alt - k : yabai -m window --focus north
+# alt - l : yabai -m window --focus east
+# alt - z : yabai -m window --toggle zoom-fullscreen
+# shift + alt - z : yabai -m window --toggle zoom-parent
 
 # FLOATING: switching focus
 # Switches to next window
@@ -207,10 +207,10 @@ ctrl + alt - a : yabai -m space --layout bsp
 ctrl + alt - d : yabai -m space --layout float
 
 # increase window size
-ctrl + alt - h : yabai -m window --resize left:-40:0
-ctrl + alt - j : yabai -m window --resize bottom:0:40
-ctrl + alt - k : yabai -m window --resize top:0:-40
-ctrl + alt - l : yabai -m window --resize right:40:0
+# ctrl + alt - h : yabai -m window --resize left:-40:0
+# ctrl + alt - j : yabai -m window --resize bottom:0:40
+# ctrl + alt - k : yabai -m window --resize top:0:-40
+# ctrl + alt - l : yabai -m window --resize right:40:0
 
 # decrease window size
 ctrl + alt + cmd - h : yabai -m window --resize left:40:0

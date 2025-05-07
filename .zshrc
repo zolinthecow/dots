@@ -44,7 +44,7 @@ ssh_tun_kill() {
 # I wonder why i did this
 # export NODE_OPTIONS=--openssl-legacy-provider
 
-export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk@23/bin:$PATH"
 
 # bun
 [ -s "/Users/colinzhao/.bun/_bun" ] && source "/Users/colinzhao/.bun/_bun"
@@ -64,6 +64,7 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+alias tmux='OUTER_TERM_PROGRAM="$TERM_PROGRAM" tmux'
 ~/.tmux/plugins/tpm/bin/install_plugins > /dev/null
 
 # The next line updates PATH for the Google Cloud SDK.
@@ -89,7 +90,6 @@ unset __conda_setup
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 
 
 # BEGIN opam configuration

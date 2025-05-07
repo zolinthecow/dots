@@ -1,0 +1,59 @@
+{
+    "window.commandCenter": 1,
+    "workbench.editor.showTabs": "single",
+    "vim.smartRelativeLine": true,
+    "vim.overrideCopy": false,
+    "vim.highlightedyank.enable": true,
+    "editor.lineNumbers": "relative",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["K"],
+            "commands": ["editor.action.showHover"]
+        },
+        {
+            "before": ["g", "d"],
+            "commands": ["editor.action.revealDefinition"]
+          },
+          {
+            "before": ["g", "D"],
+            "commands": ["editor.action.revealDeclaration"]
+          },
+          {
+            "before": ["g", "i"],
+            "commands": ["editor.action.goToImplementation"]
+          },
+          {
+            "before": ["g", "r"],
+            "commands": ["editor.action.referenceSearch.trigger"]
+          },
+          {
+            "before": ["g", "l"],
+            "commands": ["editor.action.showHover"] // can be changed to diagnostics if preferred
+          },
+          {
+            "before": ["<leader>", "r", "n"],
+            "commands": ["editor.action.rename"]
+          },
+          {
+            "before": ["<leader>", "c", "a"],
+            "commands": ["editor.action.codeAction"]
+          },
+          {
+            "before": ["<leader>", "x"],
+            "commands": ["workbench.actions.view.problems"]
+          },
+          {
+            "before": ["]", "d"],
+            "commands": ["editor.action.marker.next"]
+          },
+          {
+            "before": ["[", "d"],
+            "commands": ["editor.action.marker.prev"]
+          },
+          {
+            "before": ["<leader>", "f"],
+            "commands": ["editor.action.formatDocument"]
+          },
+    ],
+    "vim.leader": "<space>"
+}

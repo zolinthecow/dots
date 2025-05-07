@@ -14,7 +14,8 @@ then
             brew install stow
 fi
 
-stow .
+stow . --ignore=cursor
+stow --dir="$HOME/dots" --target="$HOME/Library/Application Support/Cursor/User" cursor
 
 brew install wget
 # https://github.com/nvbn/thefuck

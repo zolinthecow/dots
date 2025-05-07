@@ -5,11 +5,19 @@ if [[ $# -eq 1 ]]; then
 else
     baseFolders=(
         "$HOME/src/personal" 
-        "$HOME/src/etched" 
+        "$HOME/src/polymarket/"
         "$HOME/School/2024-2025/"
     )
     folders=$(fd . ${baseFolders[@]} --min-depth=1 --max-depth=1 --type=d --hidden -L)
-    selected=$(echo "$folders" | fzf)
+    specificFolders=(
+        "$HOME/dots"
+    )
+    selected=$(
+      {
+        echo "$folders"
+        printf '%s\n' "${specificFolders[@]}"
+      } | fzf
+    )
 fi
 
 if [[ -z $selected ]]; then
