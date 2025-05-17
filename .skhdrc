@@ -106,7 +106,7 @@
 # ]
 
 # open terminal, blazingly fast compared to iTerm/Hyper
-cmd - return : open -a /Applications/iTerm.app/
+cmd + ctrl - return : open -a /Applications/iTerm.app/
 
 # open cursor
 cmd + shift - return : open -a "Cursor"
