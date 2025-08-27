@@ -1,6 +1,5 @@
 {
     "window.commandCenter": 1,
-    "workbench.editor.showTabs": "single",
     "vim.smartRelativeLine": true,
     "vim.overrideCopy": false,
     "vim.highlightedyank.enable": true,
@@ -56,5 +55,8 @@
           },
     ],
     "vim.leader": "<space>",
-    "vim.useSystemClipboard": true
+    "vim.useSystemClipboard": true,
+    "diffEditor.maxComputationTime": 0,
+    "editor.codeActions.triggerOnFocusChange": true,
+    "workbench.editor.showTabs": "single"
 }

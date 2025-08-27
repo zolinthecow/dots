@@ -4,3 +4,13 @@
 .config/*
 !.config/tmux
 !.config/nvim
+.agent-work
+
+# Claude Code hooks
+.claude/
+
+# nvim-claude
+.claude/settings.local.json
+.nvim-claude/
+
+bin/google-cloud-sdk

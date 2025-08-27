@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+if [ -d $1 ]
+then
+	echo "That directory already exists"
+	exit 1
+fi
+
+mkdir $1
+touch $1/$1.in
+sed 's/setIO()/setIO("'$1'")/g' $HOME/src/personal/cc/utils/template.cpp > $1/$1.cpp
+sed 's/NAME/'$1'/g' $HOME/src/personal/cc/utils/Makefile > $1/Makefile
+sed "s|DIR|$(realpath "$1")|g" "$HOME/src/personal/cc/utils/compile_commands.json" > "$1/compile_commands.json"
+touch $1/brute.cpp
+cp $HOME/src/personal/cc/utils/gen.cpp $1/ 
+cp $HOME/src/personal/cc/utils/gentree.cpp $1/
+cp $HOME/src/personal/cc/utils/s.sh $1/
+
+cd $1

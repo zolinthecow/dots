@@ -1,0 +1,3 @@
+#!/bin/zsh
+
+sed -n 's/^lastpass:\(.*\)/\1/p' ~/.colin/colin.txt | pbcopy

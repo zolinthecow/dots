@@ -6,6 +6,7 @@ else
     baseFolders=(
         "$HOME/src/personal" 
         "$HOME/src/polymarket/"
+        "$HOME/src/wags"
         "$HOME/School/2024-2025/"
     )
     folders=$(fd . ${baseFolders[@]} --min-depth=1 --max-depth=1 --type=d --hidden -L)

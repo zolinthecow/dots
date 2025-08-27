@@ -64,9 +64,6 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-alias tmux='OUTER_TERM_PROGRAM="$TERM_PROGRAM" tmux'
-~/.tmux/plugins/tpm/bin/install_plugins > /dev/null
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/colinzhao/bin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/colinzhao/bin/google-cloud-sdk/path.zsh.inc'; fi
 
@@ -99,3 +96,10 @@ unset __conda_setup
 # This section can be safely removed at any time if needed.
 [[ ! -r '/Users/colinzhao/.opam/opam-init/init.zsh' ]] || source '/Users/colinzhao/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
 # END opam configuration
+
+function git-poly() {
+  GH_CONFIG_DIR="$HOME/.config/gh-polymarket" \
+  GIT_ASKPASS="$HOME/bin/askpass-gh.sh" \
+  git "$@"
+}
+

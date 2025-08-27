@@ -69,4 +69,12 @@
         "key": "ctrl+z",
         "command": "workbench.action.toggleMaximizeEditorGroup"
     },
+    {
+        "key": "shift+enter",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "\\\r\n"
+        },
+        "when": "terminalFocus"
+    }
 ]
