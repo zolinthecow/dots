@@ -7,7 +7,7 @@ else
         "$HOME/src/personal" 
         "$HOME/src/polymarket/"
         "$HOME/src/wags"
-        "$HOME/School/2024-2025/"
+        "$HOME/School/2025-2026/"
     )
     folders=$(fd . ${baseFolders[@]} --min-depth=1 --max-depth=1 --type=d --hidden -L)
     specificFolders=(

@@ -1,0 +1,15 @@
+[projects."/Users/colinzhao/src/personal/codex"]
+trust_level = "trusted"
+
+[projects."/Users/colinzhao/src/wags/wags"]
+trust_level = "trusted"
+
+[projects."/Users/colinzhao/dots/.config/nvim/.git/modules/lua"]
+trust_level = "trusted"
+
+[hooks]
+pre_tool_use = ["/Users/colinzhao/.config/nvim/lua/nvim-claude/lua/nvim-claude/agent_provider/providers/codex/codex-hooks/pre-tool-use.sh"]
+post_tool_use = ["/Users/colinzhao/.config/nvim/lua/nvim-claude/lua/nvim-claude/agent_provider/providers/codex/codex-hooks/post-tool-use.sh"]
+user_prompt_submit = ["/Users/colinzhao/.config/nvim/lua/nvim-claude/lua/nvim-claude/agent_provider/providers/codex/codex-hooks/user-prompt-submit.sh"]
+stop = ["/Users/colinzhao/.config/nvim/lua/nvim-claude/lua/nvim-claude/agent_provider/providers/codex/codex-hooks/stop-hook-validator.sh"]
+timeout_ms = 10000

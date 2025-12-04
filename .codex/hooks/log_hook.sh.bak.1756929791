@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+PAYLOAD="$1"
+LOG="$HOME/.codex/hook-log.jsonl"
+# Prepend timestamp and append JSON payload
+TS=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+echo "{\"ts\":\"$TS\",\"payload\":$PAYLOAD}" >> "$LOG"

@@ -9,8 +9,12 @@
 # Claude Code hooks
 .claude/
 
+# Codex sessions
+.codex/sessions
+
 # nvim-claude
 .claude/settings.local.json
 .nvim-claude/
 
 bin/google-cloud-sdk
+
