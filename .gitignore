@@ -9,8 +9,9 @@
 # Claude Code hooks
 .claude/
 
-# Codex sessions
-.codex/sessions
+# Codex 
+.codex
+!.codex/config.toml
 
 # nvim-claude
 .claude/settings.local.json
