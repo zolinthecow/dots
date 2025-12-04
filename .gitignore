@@ -10,7 +10,7 @@
 .claude/
 
 # Codex 
-.codex
+.codex/*
 !.codex/config.toml
 
 # nvim-claude
